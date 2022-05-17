@@ -6,7 +6,7 @@
 /*   By: sleleu <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 18:11:11 by sleleu            #+#    #+#             */
-/*   Updated: 2022/05/05 20:40:54 by sleleu           ###   ########.fr       */
+/*   Updated: 2022/05/17 19:18:48 by sleleu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,11 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*tab;
+	size_t	len;
 
+	len = nmemb * size;
+	if (len / size != nmemb)
+		return (NULL);
 	tab = malloc(nmemb * size);
 	if (!tab)
 		return (NULL);
