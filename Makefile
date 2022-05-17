@@ -35,24 +35,38 @@ SRC = ft_atoi.c\
       ft_tolower.c\
       ft_toupper.c\
 
+SRC_BONUS = ft_lstadd_front.c\
+	    ft_lstadd_back.c\
+	    ft_lstclear.c\
+	    ft_lstdelone.c\
+	    ft_lstiter.c\
+	    ft_lstlast.c\
+	    ft_lstnew.c\
+	    ft_lstmap.c\
+	    ft_lstsize.c\
+
 OBJS = $(SRC:.c=.o)
+
+OBJS_BONUS = $(SRC_BONUS:.c=.o)
 
 HEADER = libft.h
 
 CC = gcc
 
-RM = rm -f
+CFLAGS = -Wall -Wextra -Werror
 
-FLAGS = -Wall -Wextra -Werror
-
-all: ${NAME}
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar cr $(NAME) $(OBJS)
 
+bonus: $(OBJS_BONUS)
+	$(CC) $(CFLAGS) -c $(SRC_BONUS)
+	ar cr $(NAME) $(OBJS_BONUS)
+
 clean:
-	rm -rfv $(OBJS)
+	rm -rfv $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	rm -rfv $(NAME)
@@ -60,6 +74,6 @@ fclean: clean
 re: fclean all
 
 norme:
-	norminette -R $(SRC)
+	norminette -R $(SRC) $(SRC_BONUS)
 
-.PHONY: all clean fclean re norme
+.PHONY: all bonus clean fclean re norme
