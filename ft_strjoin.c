@@ -6,25 +6,11 @@
 /*   By: sleleu <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 20:52:13 by sleleu            #+#    #+#             */
-/*   Updated: 2022/05/06 15:40:38 by sleleu           ###   ########.fr       */
+/*   Updated: 2022/05/24 16:07:04 by sleleu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_strssize(char const *s1, char const *s2)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j])
-		j++;
-	return (i + j);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -33,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*tab;
 
 	i = 0;
-	size = ft_strssize(s1, s2);
+	size = (ft_strlen(s1) + ft_strlen(s2));
 	tab = malloc(sizeof(char) * size + 1);
 	tab[size] = '\0';
 	if (tab == NULL)
@@ -55,6 +41,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 /*
    int main(void)
    {
-   printf("%s\n", ft_strjoin("test1","test2"));
-   }
-   */
+	char	tab[2];
+   printf("%s\n", ft_strjoin(tab, "1"));
+	ft_strjoin(tab, "2");
+	ft_strjoin(tab, "\0");
+	printf("%s\n", tab);
+   }*/
