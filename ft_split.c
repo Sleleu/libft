@@ -91,25 +91,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (tab);
 }
-/*
-int	main(int argc, char ** argv)
-{
-	int	i;
-	char	**tab;
-
-	tab = ft_split(argv[1], '/');
-	i = 0;
-	while (tab[i])
-	{
-		printf("%s\n", tab[i]);
-		i++;
-	}
-	i = 0;
-	while (i < argc)
-	{
-		free(tab[i]);
-		i++;
-	}
-	free(tab);
-	return (0);
-}*/

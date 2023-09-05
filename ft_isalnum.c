@@ -21,13 +21,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-   int main(void)
-   {
-   int    c = '9';
-
-   printf("%d\n", ft_isalnum(c));
-   printf("%d\n", isalnum(c));
-   return (0);
-   }
-   */

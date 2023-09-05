@@ -27,17 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char *s = "012345";
-	int     c = '2';
-	const char	*s2 = "012345";
-
-	s = ft_memchr((const void *)s, c, 3);
-	s2 = memchr((const void *)s2, c, 3);
-
-	printf("%s\n", s);
-	printf("%s\n", s2);
-	return (0);
-}*/

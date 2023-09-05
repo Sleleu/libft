@@ -24,14 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(tab, nmemb * size);
 	return (tab);
 }
-/*
-int	main(void)
-{
-	int	*tab;
-
-	tab = ft_calloc(40, 4);
-	printf("%p\n", tab);
-	free(buffer);
-	return (0);
-}
-*/

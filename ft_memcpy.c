@@ -28,15 +28,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-   int main(void)
-   {
-   char    *dst, *src;
-
-   src = strdup("dsfsfsd");
-   dst = strdup("dfzezarz");
-   memcpy(dst, src, 5);
-   printf("%s\n", dst);
-   return (0);
-   }
-   */

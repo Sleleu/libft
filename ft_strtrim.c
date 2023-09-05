@@ -71,9 +71,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	tab = ft_substr(s1, size_start, ft_strlen(s1) - (size_start + size_end));
 	return (tab);
 }
-/*
-int	main(void)
-{
-	printf("%s\n", ft_strtrim("aaaaabacaaaaa", "a"));
-	return (0);
-}*/

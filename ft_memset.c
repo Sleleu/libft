@@ -27,14 +27,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-   int main(void)
-   {
-   char *str;
-
-   str = ft_strdup("hellohello");
-   ft_memset(str, 32, 5);
-   printf("%s\n", str);
-   return (0);
-   }
-   */

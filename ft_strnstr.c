@@ -31,14 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char *l = "aaabcabcd";
-	const char *s = "cd";
-	char *ptr;
-
-	ptr = ft_strnstr(l, s, 9);
-	printf("%s\n", ptr);
-	return (0);
-}*/

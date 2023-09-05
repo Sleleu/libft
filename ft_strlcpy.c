@@ -27,17 +27,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-/*
-   int main(void)
-   {
-   char    *src = "abcdef";
-   char    *dst;
-
-   dst = strdup("ghijkl");
-   printf("%s\n", src);
-   printf("%s\n", dst);
-   printf("%c\n", (int)strlcpy(dst, src, 5));
-   printf("%s\n", src);
-   printf("%s\n", dst);
-   return (0);
-   }*/

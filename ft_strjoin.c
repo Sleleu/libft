@@ -38,12 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (tab);
 }
-/*
-   int main(void)
-   {
-	char	tab[2];
-   printf("%s\n", ft_strjoin(tab, "1"));
-	ft_strjoin(tab, "2");
-	ft_strjoin(tab, "\0");
-	printf("%s\n", tab);
-   }*/

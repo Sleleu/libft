@@ -26,13 +26,3 @@ char	*ft_strrchr(const char *s, int c)
 	else
 		return (NULL);
 }
-/*
-int	main(void)
-{
-	const   char *s = "tripouille";
-	//int     c = 65;
-
-	printf("%s\n", strrchr(s, 't' + 256));
-	printf("%s\n", ft_strrchr(s, 't' + 256));
-	return (0);
-}*/

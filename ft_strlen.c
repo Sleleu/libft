@@ -21,12 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-/*
-   int main(int argc, char **argv)
-   {
-   int size;
-   if (argc == 2)
-   printf("%d\n", size = ft_strlen(argv[1]));
-   return (0);
-   }
-   */

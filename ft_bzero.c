@@ -25,14 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*
-   int main(void)
-   {
-   char    *str;
-   str = strdup("Hello");
-   printf("%s\n", str);
-   ft_bzero(str, 2);
-   printf("%s\n", str + 2);
-   return (0);
-   }
-   */

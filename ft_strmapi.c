@@ -12,14 +12,6 @@
 
 #include "libft.h"
 
-/*
-char	ft_antoine(unsigned int antoine, char c)
-{
-	c = c + antoine;
-	return (c);
-}
-*/
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
@@ -36,11 +28,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (map);
 }
-/*
-int	main(void)
-{
-	char	*s = "abcd";
-	printf("%s\n", ft_strmapi(s, &ft_antoine));
-	return  (0);
-}
-*/

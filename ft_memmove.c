@@ -40,15 +40,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-   int main(void)
-   {
-   char    *dst, *src;
-
-   src = strdup("123456");
-   dst = strdup("abcdef");
-   ft_memmove(dst, src, 4);
-   printf("%s\n", dst);
-   return (0);
-   }
-   */

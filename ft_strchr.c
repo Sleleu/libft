@@ -26,15 +26,3 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return (NULL);
 }
-
-/*
-int	main(void)
-{
-	const	char *s = "abcdABCD0123";
-	int	c = '0';
-
-	printf("%s\n", ft_strchr(s, c));
-	printf("%s\n", strchr(s, c));
-	return (0);
-}
-*/

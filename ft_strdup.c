@@ -33,15 +33,3 @@ char	*ft_strdup(const char *s1)
 	tab[i] = '\0';
 	return (tab);
 }
-/*
-   int     main(void)
-   {
-   char    *s1 = "Hello test test";
-   char    *tab;
-
-   tab = ft_strdup(s1);
-   printf("copy = %s\n", tab);
-   printf("original = %s\n", s1);
-   free(tab);
-   }
-   */
