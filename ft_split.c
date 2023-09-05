@@ -52,6 +52,19 @@ static char	*ft_word(char const *s, char c)
 	return (word);
 }
 
+static void	ft_free(char **tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
@@ -70,7 +83,8 @@ char	**ft_split(char const *s, char c)
 		if (*s && *s != c)
 		{
 			tab[i] = ft_word(s, c);
-			i++;
+			if (!tab[i++])
+				ft_free(tab);
 		}
 		while (*s && *s != c)
 			s++;
